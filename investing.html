@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Investing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="finale1.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <div class="open">
+                <div class="close-svg" onclick="closeNav()">
+                    <!-- <svg viewBox="0 0 100 60" width="30" height="30">
+                        <rect width="90" height="9" rx="8"></rect>
+                        <rect y="25" width="90" height="9" rx="8"></rect>
+                        <rect y="50" width="90" height="9" rx="8"></rect>
+                    </svg> -->
+                    <svg viewBox="0 0 100 60" width="30" height="30">
+	                    <line x1="10" y1="3" x2="70" y2="60" rx="8"/>
+                        <line x1="70" y1="3" x2="10" y2="60" rx="8"/>
+                    </svg>
+                </div>
+            </div>
+        
+        
+            <!-- Overlay content -->
+            <nav class="overlay-content">
+                <ul class="navigation">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="philosophy.html">Philosophy</a></li>
+                    <li><a href="wellness.html">Wellness</a></li>
+                    <li><a class="reactive" href="investing.html">Investing</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+            </nav>
+        </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="open">
+            <div class="open-svg" onclick="openNav()">
+                <svg viewBox="0 0 100 60" width="30" height="30">
+                    <rect width="90" height="9" rx="8"></rect>
+                    <rect y="25" width="90" height="9" rx="8"></rect>
+                    <rect y="50" width="90" height="9" rx="8"></rect>
+                </svg>
+            </div>
+        </div>
+    
+        <div id="main" class="content">
+            <header class="head">
+                <h1>Timeless wisdom gathered through reading and searching.</h1>
+                <h2>Quotes and adages worth remembering and meditating upon.</h2>    
+            </header>
+            <div class="slideshow-container item">
+                <div>
+                    <h1>Investing</h1>
+                </div>
+                <div class="container">
+                    <div class="mySlides fade">
+                        <article>
+                            <p>Patience. Prudence. Perseverance. Persistence.</p>
+                            <p>Patience is the real alpha.</p>
+                            <p>"I am shooting for longevity." <span class="italic">Nero Tulip</span></p>
+                            <p>"Only those who can conquer their fear will survive." <span class="italic">Dune</span></p>
+                            <p>Investing literally has to do with determination, consistency and having a mindset to never give up. Just like a battle or war, we take loss in our stride and continue to fight. Never give up, never get too comfortable and you'll be surprised by the outcome.</p>
+                            <p>Dollar cost averaging, benign indifference and time are the three principles of successful investing.</p>
+                            <p>Only in the stock market do people get scared when things get cheaper.</p>
+                            <p>“Time is the friend of the wonderful company, the enemy of the mediocre.” <span class="italic">Warren Buffett</span></p>
+                            <p>"These people had one thing in common. They knew they had it in themselves, they knew they could be something beyond where they were, they were willing to put their time, their energies, to better themselves. What you really could do with more skills it's just remarkable." <span class="italic">Warren Buffett</span></p>
+                        </article>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="mySlides fade">
+                    <article>            
+                        <p>Warren Buffett investing framework:</p>
+                            <ul class="list">
+                                <li>a stock is part of a business, try to understand the business, search for companies with enduring competitive advantages or a wide moat</li>
+                                <li>how investors should react to stock market fluctuations - use Mr. Market to your own advantage</li>
+                                <li>the margin of safety - the stock price must scream at you.</li>
+                            </ul>
+                        <p>"Interest rates act like gravity on valuation." <span class="italic">Warren Buffett</span></p>
+                        <p>Short-term challanges are the price investors pay for long-term riches.</p>
+                        <p>In the stock market, the short run couldn't be more different than the long run.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mySlides fade">
+                    <article>
+                        
+                        <p>"And that their sins may grow; let them live in their folly until their time is ripe. Let them not know that I am the master." <span class="italic">H.G. Wells</span></p>
+                        <p>page 3</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex hic dolores blanditiis, voluptates dolorum quisquam adipisci beatae neque a et! Voluptatum saepe natus maiores reiciendis maxime vitae aliquid animi qui ducimus laudantium, repellat aspernatur!</p>
+                    </article>
+                </div> 
+            </div>
+                        
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </div>
+    <script src="test1.js"></script>
+
+    </body>
+</html>
