@@ -86,7 +86,7 @@ body {
     display: none;
   }
   .position {
-    padding-top: 7em;
+    padding: 5em 1em;
   }
 }
 
@@ -161,7 +161,7 @@ body {
     display: none;
   }
   .position {
-    padding: 4em 2em;
+    padding: 3em 2em;
   }
 }
 
