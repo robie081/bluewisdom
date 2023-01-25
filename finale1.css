@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .overlay {
       height: 100%;
       width: 0%;
@@ -82,13 +82,15 @@ body {
   .container {
     margin: 0.6rem 0.6rem;
   }
-    
   .head {
     display: none;
   }
+  .position {
+    padding-top: 7em;
+  }
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 430px) and (max-width: 930px) {
   .overlay {
       height: 100%;
       width: 0%;
@@ -155,13 +157,15 @@ body {
   .container {
     margin: 0.6rem 0.6rem;
   }
-
   .head {
     display: none;
   }
+  .position {
+    padding: 4em 2em;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 930px) {
   body {
     background: #fff;
     color: #333;
@@ -237,9 +241,9 @@ body {
   .open {
     display: none;
   }
-  /* .position {
-    padding: 100px;
-  } */
+  .position {
+    padding: 5em;
+  }
 }
 
 #main {
@@ -301,9 +305,6 @@ td {
   width: 1em;
   margin-left: 2em;
 }  
-.position {
-  padding: 7em;
-}
 
  /* Without windows resize using JS but CSS  */
  /* TO BE TESTED */
