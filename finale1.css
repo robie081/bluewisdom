@@ -93,7 +93,7 @@ body {
     margin-left: 0px;
   }
   td {
-    font-size: 0.875em;
+    font-size: 1rem;
     padding: 5px 18px 5px 18px; 
     border-bottom:1px solid #ccc; 
     line-height: 16px;
@@ -178,7 +178,7 @@ body {
     margin-left: 1em;
   }
   td {
-    font-size: 1em;
+    font-size: 1.125rem;
     padding: 5px 18px 5px 18px; 
     border-bottom:1px solid #ccc; 
     line-height: 16px;
