@@ -88,6 +88,16 @@ body {
   .position {
     padding: 5em 1em;
   }
+  table {
+    border-collapse: collapse;  
+    margin-left: 0px;
+  }
+  td {
+    font-size: 0.875em;
+    padding: 5px 18px 5px 18px; 
+    border-bottom:1px solid #ccc; 
+    line-height: 16px;
+  }
 }
 
 @media screen and (min-width: 430px) and (max-width: 930px) {
@@ -162,6 +172,16 @@ body {
   }
   .position {
     padding: 3em 2em;
+  }
+  table {
+    border-collapse: collapse;  
+    margin-left: 1em;
+  }
+  td {
+    font-size: 1em;
+    padding: 5px 18px 5px 18px; 
+    border-bottom:1px solid #ccc; 
+    line-height: 16px;
   }
 }
 
@@ -244,6 +264,16 @@ body {
   .position {
     padding: 5em;
   }
+  table {
+    border-collapse: collapse;  
+    margin-left: 2em;
+  }
+  td {
+    font-size: 1em;
+    padding: 5px 18px 5px 18px; 
+    border-bottom:1px solid #ccc; 
+    line-height: 16px;
+  }
 }
 
 #main {
@@ -279,19 +309,6 @@ body {
 .italic {
   font-size: 0.937em; 
   font-style: italic;
-}
-.books {
-  line-height: 30%;
-}
-table {
-  border-collapse: collapse;  
-  margin-left: 0px;
-}
-td {
-  font-size: 0.875em;
-  padding: 5px 18px 5px 18px; 
-  border-bottom:1px solid #ccc; 
-  line-height: 16px;
 }
 .list {
   list-style-type: none;
