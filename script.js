@@ -24,6 +24,12 @@ bttn.addEventListener('click', () => {
   document.getElementById('toggler').classList.toggle('open');  
 });
 
+// bttn.addEventListener('click', () => {
+//   document.getElementById('toggler').classList.toggle('overlay');  
+// });
+
+
+
   // Font Awesome
 
 // const hamNavBttnContainer = document.querySelector('.nav-button');

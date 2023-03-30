@@ -52,10 +52,17 @@ body {
 
 .open {
   display: block;
+  /* height: 400px; */
 }
+
+/* .overlay { */
+  /* height: 300px; */
+  /* background-color: plum; */
+/* } */
 
 .navWrapper {
   border: 3px solid lightblue;
+  background-color: plum;
 }
 
 .navigator {
