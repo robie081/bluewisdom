@@ -1,2 +1,2 @@
-# timelesswisdom
+# bluewisdom
 shared timeless wisdom
