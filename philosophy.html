@@ -19,158 +19,94 @@
     </head>
     
     <body>
-        <div class="site-container">
+        <header>
+            <!-- <h1>Header</h1> -->
+        </header> 
+        <nav class="navigator">
+            <div id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">menu</span></div>
 
-            <header class="navWrapper">
-                <nav class="navigator">
+            <ul id="toggler" class="nav">
+                <li><a href="index.html">About</a></li>
+                <li class="active"><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="investing.html">Investing</a></li>
+                <li><a href="books.html">Books</a></li>
+            </ul>
+        </nav>  
 
-                     <!-- <button id="bttn" class="nav-button"><i class="fa-solid fa-xmark"></i></button> -->
-                     <div id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">menu</span></div>
-                     <!-- <button id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">close</span></button> -->
-                     
-                    <div class="test">
-                        <ul id="toggler" class="primary-nav">
-                            <li><a class="active" href="index.html">About</a></li>
-                            <li><a href="philosophy.html">Philosophy</a></li>
-                            <li><a href="wellness.html">Wellness</a></li>
-                            <li><a href="investing.html">Investing</a></li>
-                            <li><a href="books.html">Books</a></li>
-                        </ul>
-                    </div>                    
-                </nav>
-            </header>    
-
-            <!-- <header class="header">
-                <nav class="nav-wrap">
-                    <div id="myNav" class="overlay"> -->
-
-                        <!-- Button to close the overlay navigation -->
-                        <!-- <div class="open">
-                            <div class="close-svg" onclick="closeNav()">
-                                <svg viewBox="0 0 100 60" width="30" height="30">
-                                    <line x1="10" y1="3" x2="70" y2="60" rx="8"/>
-                                    <line x1="70" y1="3" x2="10" y2="60" rx="8"/>
-                                </svg>
-                            </div>
-                        </div> -->
-                    
-                        <!-- <div class="menu overlay-content">
-                            <ul class="nav navigation">
-                                <li><a class="nav__link nav__link--current" href="index.html">About</a></li>
-                                <li><a class="active nav__link nav__link--current" href="philosophy.html">Philosophy</a></li>
-                                <li><a class="nav__link nav__link--current" href="wellness.html">Wellness</a></li>
-                                <li><a class="nav__link nav__link--current" href="investing.html">Investing</a></li>
-                                <li><a class="nav__link nav__link--current" href="books.html">Books</a></li>
-                            </ul>
-                        </div> -->
-
-                        <!-- Overlay content -->
-                        <!-- <nav class="overlay-content">
-                            <ul class="navigation">
-                                <li><a href="index.html">About</a></li>
-                                <li><a class="reactive" href="philosophy.html">Philosophy</a></li>
-                                <li><a href="wellness.html">Wellness</a></li>
-                                <li><a href="investing.html">Investing</a></li>
-                                <li><a href="books.html">Books</a></li>
-                            </ul>
-                        </nav> -->
-                    <!-- </div> -->
-                
-                <!-- Use any element to open/show the overlay navigation menu -->
-                    <!-- <div class="open">
-                        <div class="open-svg" onclick="openNav()">
-                            <svg viewBox="0 0 100 60" width="30" height="30">
-                                <rect width="90" height="9" rx="8"></rect>
-                                <rect y="25" width="90" height="9" rx="8"></rect>
-                                <rect y="50" width="90" height="9" rx="8"></rect>
-                            </svg>
-                        </div>
-                    </div> -->
-                <!-- </nav>
-            </header> -->
         
-            <main class="mainWrapper">
-            <div id="main" class="content">
-                <header class="head">
-                    <h1>Timeless wisdom gathered through reading and searching.</h1>
-                    <h2>Quotes and adages worth remembering and meditating upon.</h2>    
-                </header>
-                <div class="slideshow-container item">
-                    <div>
-                        <h1>Philosophy</h1>
-                    </div>
-                    <div class="container">
-                        <div class="mySlides fade">
-                            <article>
-                                <p>"Patience is the companion of wisdom." <span class="italic">St. Augustine</span></p>
-                                <p>"Nothing to extremes, everything in moderation.</p>
-                                <p>Form the habit of searching for the positive in every circumstance.</p>
-                                <p>There are no mistakes in life, only lessons." <span class="italic">Yogi Raman</span></p>
-                                <p>"The only constant in life is change." <span class="italic">Russell Clark</span></p>
-                                <p>"If thou wilt make a man happy, add not unto his riches, but take away from his desires." <span class="italic">Epicurus</span></p>
-                                <p>"Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for." <span class="italic">Epicurus</span></p>
-                                <p>View every challenge as an opportunity.</p>
-                                <p>"Nothing is invented, for it's written in nature first." <span class="italic">Antoni Gaudi</span></p>
-                                <p>"Whreof we cannot speak, thereof we must remain silent." <span class="italic">L. Wittgenstein</span></p>
-                                <p>Work is the best friend I have.</p>
-                                <p>Work well done does good to the man who does it. It makes him a better man.</p>
-                                <p>"We do not rise to the level of our expectations but fall to the level of our training." <span class="italic">Miyamoto Musashi</span></p>
-                                <p>"And from the best of the strange, perhaps nothing." <span class="italic">Charles Bukowski</span></p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="mySlides fade">
-                            <article>    
-                                <p>The only way to be happy is to love. Unless you love, your life will flash by.</p>        
-                                <p>Wealth is inner-peace. Find joy from within ourselves and from our relationships.</p>
-                                <p>The importance of being happy with simple things.</p>
-                                <p>Time freedom, location freedom, financial freedom and freedom from other people's expectations.</p>                                                    
-                                <p>Not all those that wander are lost.</p>
-                                <p>"Think of yourself as dead. You have lived your life. Now take what's left and live it properly." <span class="italic">Marcus Aurelius</span></p>
-                                <p>"Everything hangs on one's thinking...A man is as unhappy as he has convinced himself he is." <span class="italic">Seneca</span></p>
-                                <p>"That man is the richest whose pleasures are the cheapest." <span class="italic">Henry David Thoreau</span></p>
-                                <p>Omnia mea mecum porto.</p>
-                                <p>"Privacy is your right to be you." <span class="italic">Tim Cook</span></p>
-                                <p>Pain is the best teacher, but the worst friend.</p>
-                                <p>Death is not the greatest loss in life. Loss is when life dies inside you while you are alive</p>
-                                <p>"This is the precept by which I have lived: prepare for the worst, expect the best and take what comes." <span class="italic">Hanna Arendt</span></p>
-                                <p>"Seek nothing outside of yourself." <span class="italic">Miyamoto Musashi</span></p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="mySlides fade">
-                            <article>
-                                <p>"One often meets his destiny on the very road he takes to avoid it." <span class="italic">Oogway</span></p>
-                                <p>"Become so very free that your whole existance is an act of rebelion." <span class="italic">Albert Camus</span></p>
-                                <p>"You could leave life right now. Let that determine what you do and  say and think." <span class="italic">Marcus Aurelius</span></p>
-                                <p>"Rule your mind or it will rule you." <span class="italic">Horace</span></p>
-                                <!-- <p>"For all the children to whom we entrust the future." <span class="italic">Lois Lowry</span></p> -->
-                                <p>True strenght is when you stand up for yourself because nobody is there to do it for you.</p>
-                                <p>"The world has enough for everyone's needs, but not for everyone's greed." <span class="italic">Mahatma Gandi</span></p>
-                                <p>If you wish nothing, you have everything.</p>
-                                <p>You develop courage by surviving difficult times and challenging adversity." <span class="italic">Epicurus</span></p>
-                                <p>"When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love." <span class="italic">Marcus Aurelius</span></p>
-                                <p>"Success, like hapiness, cannot be pursued. It must ensue." <span class="italic">Victor Frankl</span></p>
-                                <p>"Forgiveness is the only way to reverse the irreversible flow of history." <span class="italic">Hanna Arendt</span></p>
-                                <p>"A bowl is most useful when it is empty." <span class="italic">Lao Tzu</span></p>
-                            </article>
-                        </div> 
-                    </div>
-            </div>
-        </div>
+        <main>
+            <!-- <h2>Main</h2> -->
+
+            <button class="accordion"><span class="material-symbols-outlined span">expand_more</span>
+                <span class="material-symbols-outlined span display">expand_less</span>
+            </button>
+            <section class="panel">
+                <article>
+                    <p>"Patience is the companion of wisdom." <span class="italic">St. Augustine</span></p>
+                    <p>"Nothing to extremes, everything in moderation.</p>
+                    <p>Form the habit of searching for the positive in every circumstance.</p>
+                    <p>There are no mistakes in life, only lessons." <span class="italic">Yogi Raman</span></p>
+                    <p>"The only constant in life is change." <span class="italic">Russell Clark</span></p>
+                    <p>"If thou wilt make a man happy, add not unto his riches, but take away from his desires." <span class="italic">Epicurus</span></p>
+                    <p>"Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for." <span class="italic">Epicurus</span></p>
+                    <p>View every challenge as an opportunity.</p>
+                    <p>"Nothing is invented, for it's written in nature first." <span class="italic">Antoni Gaudi</span></p>
+                    <p>"Whreof we cannot speak, thereof we must remain silent." <span class="italic">L. Wittgenstein</span></p>
+                    <p>Work is the best friend I have.</p>
+                    <p>Work well done does good to the man who does it. It makes him a better man.</p>
+                    <p>"We do not rise to the level of our expectations but fall to the level of our training." <span class="italic">Miyamoto Musashi</span></p>
+                    <p>"And from the best of the strange, perhaps nothing." <span class="italic">Charles Bukowski</span></p>
+                </article>
+            </section>
+            
+            <button class="accordion"><span class="material-symbols-outlined span">expand_more</span>
+                <span class="material-symbols-outlined span display">expand_less</span>
+            </button>
+            <section class="panel">
+                    <article>    
+                        <p>The only way to be happy is to love. Unless you love, your life will flash by.</p>        
+                        <p>Wealth is inner-peace. Find joy from within ourselves and from our relationships.</p>
+                        <p>The importance of being happy with simple things.</p>
+                        <p>Time freedom, location freedom, financial freedom and freedom from other people's expectations.</p>                                                    
+                        <p>Not all those that wander are lost.</p>
+                        <p>"Think of yourself as dead. You have lived your life. Now take what's left and live it properly." <span class="italic">Marcus Aurelius</span></p>
+                        <p>"Everything hangs on one's thinking...A man is as unhappy as he has convinced himself he is." <span class="italic">Seneca</span></p>
+                        <p>"That man is the richest whose pleasures are the cheapest." <span class="italic">Henry David Thoreau</span></p>
+                        <p>Omnia mea mecum porto.</p>
+                        <p>"Privacy is your right to be you." <span class="italic">Tim Cook</span></p>
+                        <p>Pain is the best teacher, but the worst friend.</p>
+                        <p>Death is not the greatest loss in life. Loss is when life dies inside you while you are alive</p>
+                        <p>"This is the precept by which I have lived: prepare for the worst, expect the best and take what comes." <span class="italic">Hanna Arendt</span></p>
+                        <p>"Seek nothing outside of yourself." <span class="italic">Miyamoto Musashi</span></p>
+                    </article>
+            </section>
+
+            <button class="accordion"><span class="material-symbols-outlined span">expand_more</span>
+                <span class="material-symbols-outlined span display">expand_less</span>
+
+            </button>
+            <section class="panel">
+                    <article>
+                        <p>"One often meets his destiny on the very road he takes to avoid it." <span class="italic">Oogway</span></p>
+                        <p>"Become so very free that your whole existance is an act of rebelion." <span class="italic">Albert Camus</span></p>
+                        <p>"You could leave life right now. Let that determine what you do and  say and think." <span class="italic">Marcus Aurelius</span></p>
+                        <p>"Rule your mind or it will rule you." <span class="italic">Horace</span></p>
+                        <!-- <p>"For all the children to whom we entrust the future." <span class="italic">Lois Lowry</span></p> -->
+                        <p>True strenght is when you stand up for yourself because nobody is there to do it for you.</p>
+                        <p>"The world has enough for everyone's needs, but not for everyone's greed." <span class="italic">Mahatma Gandi</span></p>
+                        <p>If you wish nothing, you have everything.</p>
+                        <p>You develop courage by surviving difficult times and challenging adversity." <span class="italic">Epicurus</span></p>
+                        <p>"When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love." <span class="italic">Marcus Aurelius</span></p>
+                        <p>"Success, like hapiness, cannot be pursued. It must ensue." <span class="italic">Victor Frankl</span></p>
+                        <p>"Forgiveness is the only way to reverse the irreversible flow of history." <span class="italic">Hanna Arendt</span></p>
+                        <p>"A bowl is most useful when it is empty." <span class="italic">Lao Tzu</span></p>
+                    </article>
+            </section>
         </main>
 
-        <footer class="footWrap">
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+        <footer>
         </footer>
-
-        </div>
 
         <script src="script.js"></script>
 
