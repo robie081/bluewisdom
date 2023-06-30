@@ -57,7 +57,7 @@ nav {
   justify-content: center;
   align-items: center;
   /* align-content: center; */
-  margin: .4em;
+  /* margin: .4em; */
 }
 
 .nav-button {
@@ -73,7 +73,7 @@ nav {
 ul > li > a {
   text-decoration: none;
   /* font-size: 1.1em; */
-  line-height: 2em;
+  line-height: 1.8em;
   /* padding: 1.6em; */
   margin: 1em;
   color: black;
@@ -90,6 +90,11 @@ ul > li > a {
 }
 
 /* Accordion */
+
+/* main {
+  width: 90%;
+  margin: auto;
+} */
 
 .accordion {
   /* border: 2px solid orange; */
@@ -140,13 +145,72 @@ ul > li > a {
   overflow: hidden;
 }
 
+/* #one {
+  display: block;
+} */
+
 @media only screen and (orientation: landscape) {
+
+  body {
+    background-color: #ddd;
+  }
+
+  nav {
+    background-color: #ddd;
+  }
+
+  .nav-button {
+    display: none;
+  }  
+
+  .navigator {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    /* display: block; */
+    text-align: center;
+    margin: 1em 0 1em 0;
+    background-color: #ddd;
+  }
+
+  li:hover {
+    /* background-color: #eee; */
+    color: tomato;
+}
+
+  nav ul li a {
+      text-decoration: none;
+      /* padding: 2em; */
+      color: inherit;
+  } 
+
+  .active {
+    /* background-color: #eee; */
+    color: tomato;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width: 1040px) {
 
     /* Grid landscape */
 
   body {
+    background-color: #ddd;
     display: grid;
-    grid-template-columns: 1fr minmax(44em, 60em) 1fr;
+    /* grid-template-columns: 1fr minmax(44em, 60em) 1fr; */
+    grid-template-columns: 1fr minmax(80%, 90%) 1fr;
   }
 
   header, nav, main, footer {
@@ -222,6 +286,11 @@ ul > li > a {
   .active {
     background-color: #eee;
     color: tomato;
+  }
+
+  main {
+    width: 80%;
+    margin: 0 auto;
   }
 
 }
