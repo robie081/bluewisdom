@@ -145,9 +145,18 @@ ul > li > a {
   overflow: hidden;
 }
 
-/* #one {
-  display: block;
-} */
+h1 {
+  text-align: center;
+  padding: 0.5em;
+  background-color: white;
+  font-size: 1.2em;
+}
+h1 > a {
+  font-family: Kalam;
+  color: purple;
+  margin: 0 auto;
+  text-decoration: none;
+}
 
 @media only screen and (orientation: landscape) {
 
@@ -198,6 +207,10 @@ ul > li > a {
   main {
     width: 90%;
     margin: 0 auto;
+  }
+
+  h1 {
+    display: none;
   }
 
 }
