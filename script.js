@@ -59,52 +59,56 @@ document.querySelector('.nav-button').addEventListener('click', () => {
 // Accordion
 // Arrow Functions and 'this' in ES6
 
-const acc = document.getElementsByClassName("accordion");
-console.log(acc);
+// My Working Way -- Before Integration
 
-// let spanmore = document.getElementsByClassName('span')[0];
-// spanmore.style.border = '2px solid plum';
-// let spanless = document.getElementsByClassName('span')[1];
-// spanless.style.border = '2px solid green';
+// const acc = document.getElementsByClassName("accordion");
+// console.log(acc);
 
-for (let i = 0; i < acc.length; i++) {
+// // let spanmore = document.getElementsByClassName('span')[0];
+// // spanmore.style.border = '2px solid plum';
+// // let spanless = document.getElementsByClassName('span')[1];
+// // spanless.style.border = '2px solid green';
 
-  acc[i].addEventListener("click", function() {
-    // this.classList.toggle("activation");
-    console.log(acc[i]);
-    acc[i].classList.toggle('activation');
+// for (let i = 0; i < acc.length; i++) {
 
-    // let panel = this.nextElementSibling;
-    let panel = acc[i].nextElementSibling;
+//   acc[i].addEventListener("click", function() {
+//     // this.classList.toggle("activation");
+//     console.log(acc[i]);
+//     acc[i].classList.toggle('activation');
 
-    // console.log(panel);
+//     // let panel = this.nextElementSibling;
+//     let panel = acc[i].nextElementSibling;
 
-    // let span = acc[i].children;
-    // let span = acc[i].children[0];
-    // console.log(span);
+//     // console.log(panel);
 
-    let spanmore = acc[i].children[0];
-    let spanless = acc[i].children[1];
-    console.log(spanmore);
-    console.log(spanless);
+//     // let span = acc[i].children;
+//     // let span = acc[i].children[0];
+//     // console.log(span);
+
+//     let spanmore = acc[i].children[0];
+//     let spanless = acc[i].children[1];
+//     console.log(spanmore);
+//     console.log(spanless);
   
-    // spanmore.style.border = '2px solid plum';
-    // spanless.style.border = '2px solid green';
+//     // spanmore.style.border = '2px solid plum';
+//     // spanless.style.border = '2px solid green';
 
 
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-      spanless.classList.add('display');
-      spanmore.classList.remove('display');
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//       spanless.classList.add('display');
+//       spanmore.classList.remove('display');
 
-    } else {
-      panel.style.display = "block";
-      spanless.classList.remove('display');
-      spanmore.classList.add('display');
-    }
-  });
-}
+//     } else {
+//       panel.style.display = "block";
+//       spanless.classList.remove('display');
+//       spanmore.classList.add('display');
+//     }
+//   });
+// }
 
+
+// Official W3Schools
 
 // var acc = document.getElementsByClassName("accordion");
 // var i;
@@ -125,27 +129,60 @@ for (let i = 0; i < acc.length; i++) {
 //   });
 // }
 
+// After Integration
+
+const accordion = document.querySelector('.accordion');
+const items = accordion.querySelectorAll('.accordion__item');
+
+const toggle_item = (item) => {
+  const body = item.querySelector('.accordion__body');
+
+  // activation
+  const title = item.querySelector('.accordion__title');
+  // // console.log(title);
+  title.classList.toggle('activation');
+
+  if (item.classList.contains('is-open')) {
+      body.removeAttribute('style');
+      item.classList.remove('is-open');
+  } else {
+      body.style.height = body.scrollHeight + 'px';
+      item.classList.add('is-open');
+  }
+}
+
+const toggle_arrow = (item) => {
+  // console.log(item);
+  const title = item.querySelector('.accordion__title');
+  // console.log(title);
+  // console.log(title.children[0]);
+  // console.log(title.children[1]);
+  let spanmore = title.children[0];
+  let spanless = title.children[1];
+
+  if (spanless.classList.contains('display')) {
+      spanless.classList.remove('display');
+      spanmore.classList.add('display');
+  } else {
+      spanless.classList.add('display');
+      spanmore.classList.remove('display');
+  }
+}
+
+items.forEach((item, index) => {
+  // console.log(item);
+  const title = item.querySelector('.accordion__title');
+  // console.log(title);
+
+  if (index === 0) {
+      toggle_item(item);
+  }
+
+  title.addEventListener('click', (e) => {
+      toggle_item(item);
+      toggle_arrow(item);
+  });
+});
 
 
 
-// Pagination
-
-// let index = 1;
-// myShow(index);
-
-// function currentSlide(n) {
-//   myShow(index = n);
-// }
-
-// function myShow(n) {
-//   console.log(`n ${n}`);
-//   console.log(`index ${index}`);
-//   let slides = document.getElementsByClassName("mySlides");
-
-//   for (let i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   slides[index - 1].style.display = "block";
-// }
-
-// }

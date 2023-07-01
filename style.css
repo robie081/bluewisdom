@@ -22,13 +22,15 @@ body {
 
 body {
   /* border: 3px solid black; */
-  background-color: #ddd;
+  background-color: white;
   /* font-family: 'Roboto', sans-serif; */
   font-weight: 300;
   /* font-family: 'Open-Sans', sans-serif; */
   /* font-size: 100%; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* Navigation */
 
 nav {
   background-color: white;
@@ -71,11 +73,12 @@ nav {
 }
 
 ul > li > a {
+  /* border: 2px solid plum; */
   text-decoration: none;
-  /* font-size: 1.1em; */
+  font-size: 1.1em;
   line-height: 1.8em;
-  /* padding: 1.6em; */
-  margin: 1em;
+  /* padding: 2em; */
+  /* margin: 2em; */
   color: black;
   font-weight: 400;
 }
@@ -96,13 +99,14 @@ ul > li > a {
   margin: auto;
 } */
 
-.accordion {
+.accordion__title {
   /* border: 2px solid orange; */
-  background-color: white;
-  /* color: #444; */
+  background-color: #eee;
+  /* padding: 5px 0; */
+  color: black;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 1.125em;
+  height: 4em;
   text-align: left;
   border: none;
   outline: none;
@@ -111,17 +115,30 @@ ul > li > a {
   border-radius: 3px;
 }
 
-.activation, .accordion:hover {
-  background-color: #eee;
+.accordion__item:first-child{
+  /* position: relative; */
+  /* border: 2px solid black; */
+  margin-top: 1em;
+  /* cursor: pointer; */
 }
 
-/* .accordion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+.is-open .accordion__body {
+  margin: 0.625em;
+}
 
-.accordion span {
+.accordion__body {
+  /* border-radius: 5px; */
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.activation, .accordion__title:hover {
+  background-color: #ddd;
+}
+
+.accordion__title > span {
+  /* border: 2px solid plum; */
   float: right;
 }
 
@@ -138,12 +155,14 @@ ul > li > a {
   font-size: 1.3em;
 }
 
-.panel {
+/* .panel {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
-}
+} */
+
+/* Header */
 
 h1 {
   text-align: center;
@@ -160,13 +179,9 @@ h1 > a {
 
 @media only screen and (orientation: landscape) {
 
-  body {
-    background-color: #ddd;
-  }
-
-  nav {
-    background-color: #ddd;
-  }
+  /* nav {
+    background-color: white;
+  } */
 
   .nav-button {
     display: none;
@@ -184,8 +199,8 @@ h1 > a {
   .nav {
     /* display: block; */
     text-align: center;
-    margin: 1em 0 1em 0;
-    background-color: #ddd;
+    margin: 1em 0 0.375em 0;
+    /* background-color: #ddd; */
   }
 
   li:hover {
@@ -195,7 +210,7 @@ h1 > a {
 
   nav ul li a {
       text-decoration: none;
-      /* padding: 2em; */
+      padding: 1em;
       color: inherit;
   } 
 
@@ -205,7 +220,7 @@ h1 > a {
   }
 
   main {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
   }
 
@@ -220,7 +235,7 @@ h1 > a {
     /* Grid landscape */
 
   body {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     display: grid;
     /* grid-template-columns: 1fr minmax(44em, 60em) 1fr; */
     grid-template-columns: 1fr minmax(80%, 90%) 1fr;
@@ -231,10 +246,6 @@ h1 > a {
   }
 
   /* Styles landscape */
-
-  nav {
-    background-color: #ddd;
-  }
 
   .nav-button {
     display: none;
@@ -253,7 +264,7 @@ h1 > a {
     /* display: block; */
     text-align: center;
     margin: 3em 0 3em 0;
-    background-color: #ddd;
+    /* background-color: #ddd; */
   }
 
   nav ul {
@@ -267,13 +278,13 @@ h1 > a {
       float: left;
       border-right: 1px solid #aaa;
       box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
-      color: #555;
-      font-size: 1.1em;
+      color: #333;
+      font-size: 1em;
       font-weight: 400;
-      transition: all 0.3s linear;
+      transition: all 0.5s linear;
       /* text-transform: uppercase; */
       padding: 0.5em 1em;
-      background-color: white;
+      background-color: #eee;
   }
 
   li:first-child {
@@ -286,7 +297,7 @@ h1 > a {
   }
 
   li:hover {
-      background-color: #eee;
+      background-color: #ddd;
       color: tomato;
   }
 
@@ -302,7 +313,7 @@ h1 > a {
   }
 
   main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
