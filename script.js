@@ -141,7 +141,7 @@ const toggle_item = (item) => {
   const title = item.querySelector('.accordion__title');
   // // console.log(title);
   title.classList.toggle('activation');
-
+  console.log(item.classList.contains('is-open'));
   if (item.classList.contains('is-open')) {
       body.removeAttribute('style');
       item.classList.remove('is-open');
@@ -152,7 +152,6 @@ const toggle_item = (item) => {
 }
 
 const toggle_arrow = (item) => {
-  // console.log(item);
   const title = item.querySelector('.accordion__title');
   // console.log(title);
   // console.log(title.children[0]);
