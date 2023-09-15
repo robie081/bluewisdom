@@ -234,12 +234,21 @@ article > p {
   }
 
   main {
-    width: 98%;
+    width: 90%;
     margin: 0 auto;
   }
 
-  h1 {
-    display: none;
+  .one {
+    /* border: 3px solid orange; */
+    margin: 1rem;
+    padding-top: 3rem;
+  }
+  
+  .two {
+    /* border: 3px solid orangered; */
+    margin: 1rem;
+    padding-top: 1rem;
+    text-align: end;
   }
 
 }
