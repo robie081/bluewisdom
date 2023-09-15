@@ -98,7 +98,23 @@ ul > li > a {
 }
 
 main {
-  border: 3px solid plum;
+  /* border: 3px solid plum; */
+}
+
+.indent {
+  margin-left: 1.5rem;
+}
+
+.one {
+  /* border: 3px solid orange; */
+  margin: 2rem;
+  padding-top: 5rem;
+}
+
+.two {
+  /* border: 3px solid orangered; */
+  margin: 2rem;
+  padding-left: 13rem;
 }
 
 /* Accordion */
@@ -168,7 +184,7 @@ article > p {
 }
 
 .italic {
-  font-size: 1em; 
+  font-size: 0.9375rem; 
   font-style: italic;
   font-weight: 400;
 }
