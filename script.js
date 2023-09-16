@@ -55,14 +55,6 @@ document.querySelector('.nav-button').addEventListener('click', () => {
 });
 
 
-// White space at page bottom after device rotation in iOS Safari
-
-window.onresize = function() {
-  document.body.height = window.innerHeight;
-}
-window.onresize(); // called to initially set the height.
-
-
 // Accordion
 // Arrow Functions and 'this' in ES6
 

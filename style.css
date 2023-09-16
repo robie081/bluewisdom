@@ -151,7 +151,8 @@ main {
 .accordion__body {
   /* border-radius: 5px; */
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: scroll;
   transition: height 0.5s ease-in-out;
 }
 
