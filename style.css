@@ -157,6 +157,7 @@ main {
 
 .activation, .accordion__title:hover {
   background-color: #ddd;
+  /* background-color: lavender; */
 }
 
 .accordion__title > span {
