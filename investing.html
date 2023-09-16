@@ -3,180 +3,136 @@
     <head>
         <title>Investing</title>
         <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, viewport-fit=cover" > -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
         <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:300,600" rel="stylesheet" type="text/css"> -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'> -->
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"> -->
 
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-
+        
         <!-- <script src="https://kit.fontawesome.com/789d035975.js" crossorigin="anonymous"></script> -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
-
     </head>
     
     <body>
-        <div class="site-container">
+        <header>
+            <!-- <h1><a href="#">Timeless Wisdom</a></h1> -->
+        </header> 
+        <nav class="navigator">
+            <div id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">menu</span></div>
 
-            <header class="navWrapper">
-                <nav class="navigator">
-                    
-                    <!-- <button id="bttn" class="nav-button"><i class="fa-solid fa-xmark"></i></button> -->
-                    <div id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">menu</span></div>
-                    <!-- <button id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">close</span></button> -->
-                    
-                    <div class="test">
-                        <ul id="toggler" class="primary-nav">
-                            <li><a class="active" href="index.html">About</a></li>
-                            <li><a href="philosophy.html">Philosophy</a></li>
-                            <li><a href="wellness.html">Wellness</a></li>
-                            <li><a href="investing.html">Investing</a></li>
-                            <li><a href="books.html">Books</a></li>
-                        </ul>
-                    </div>                    
-                </nav>
-            </header>   
+            <ul id="toggler" class="nav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li class="active"><a href="wellness.html">Wellness</a></li>
+                <li><a href="investing.html">Investing</a></li>
+                <li><a href="books.html">Books</a></li>
+            </ul>
+        </nav>  
 
-
-        <!-- <div class="site-container">
-            <header class="header">
-                <nav class="nav-wrap">
-                    <div id="myNav" class="overlay"> -->
-
-                <!-- Button to close the overlay navigation -->
-                        <!-- <div class="open">
-                            <button id="close" class="close-svg">
-                                <svg viewBox="0 0 100 60" width="30" height="30">
-                                    <line x1="10" y1="3" x2="70" y2="60" rx="8"/>
-                                    <line x1="70" y1="3" x2="10" y2="60" rx="8"/>
-                                </svg>
-                            </button>
-                        </div> -->
-                    <!-- </div> -->
-
-                        <!-- <div class="overlay-content">
-                            <ul class="navigation">
-                                <li><a class="nav__link nav__link--current" href="index.html">About</a></li>
-                                <li><a class="nav__link nav__link--current" href="philosophy.html">Philosophy</a></li>
-                                <li><a class="nav__link nav__link--current" href="wellness.html">Wellness</a></li>
-                                <li><a class="active nav__link nav__link--current" href="investing.html">Investing</a></li>
-                                <li><a class="nav__link nav__link--current" href="books.html">Books</a></li>
-                            </ul>
-                        </div> -->
-            
-                <!-- Overlay content -->
-                <!-- <nav class="overlay-content">
-                    <ul class="navigation">
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="philosophy.html">Philosophy</a></li>
-                        <li><a href="wellness.html">Wellness</a></li>
-                        <li><a class="reactive" href="investing.html">Investing</a></li>
-                        <li><a href="books.html">Books</a></li>
-                    </ul>
-                </nav> -->
-            <!-- </div> -->
         
-        <!-- Use any element to open/show the overlay navigation menu -->
-            <!-- <div class="open">
-                <div class="open-svg" onclick="openNav()">
-                    <svg viewBox="0 0 100 60" width="30" height="30">
-                        <rect width="90" height="9" rx="8"></rect>
-                        <rect y="25" width="90" height="9" rx="8"></rect>
-                        <rect y="50" width="90" height="9" rx="8"></rect>
-                    </svg>
-                </div>
-            </div>
-            </nav>
-        </header> -->
+        <main>
+            <div class="accordion">
 
-        <main class="mainWrapper">
-            <div id="main" class="content">
-                <header class="head">
-                    <h1>Timeless wisdom gathered through reading and searching.</h1>
-                    <h2>Quotes and adages worth remembering and meditating upon.</h2>    
-                </header>
-                <div class="slideshow-container item">
-                    <div>
-                        <h1>Investing</h1>
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <span class="material-symbols-outlined span display">expand_more</span>
+                        <span class="material-symbols-outlined span">expand_less</span>
                     </div>
-                    <div class="container">
-                        <div class="mySlides fade">
-                            <article>
-                                <p>Patience. Prudence. Perseverance. Persistence.</p>
-                                <p>Patience is the real alpha.</p>
-                                <p>"I am shooting for longevity." <span class="italic">Nero Tulip</span></p>
-                                <p>"Only those who can conquer their fear will survive." <span class="italic">Dune</span></p>
-                                <p>Investing literally has to do with determination, consistency and having a mindset to never give up. Just like a battle or war, we take loss in our stride and continue to fight. Never give up, never get too comfortable and you'll be surprised by the outcome.</p>
-                                <p>Dollar cost averaging, benign indifference and time are the three principles of successful investing.</p>
-                                <p>Only in the stock market do people get scared when things get cheaper.</p>
-                                <p>“Time is the friend of the wonderful company, the enemy of the mediocre.” <span class="italic">Warren Buffett</span></p>
-                                <p>"These people had one thing in common. They knew they had it in themselves, they knew they could be something beyond where they were, they were willing to put their time, their energies, to better themselves. What you really could do with more skills it's just remarkable." <span class="italic">Warren Buffett</span></p>
-                                <p>"The greatest loss is wasted time." <span class="italic">Ali</span></p>
-                            </article>
+                    <div class="accordion__body">
+                        <div class="accordion__content">
+                            <section>
+                                <article>
+                                    <p>"You can't have everything. The world will always be greater than your desires."</p>
+                                    <p>"To buy when others are despondently selling and to sell when others are euphorically buying takes the greatest courage, but provides the greatest profit." <span class="italic">Sir John Templeton</span></p>
+                                    <p>Form the habit of searching for the positive in every circumstance.</p>
+                                    <p>There are no mistakes in life, only lessons." <span class="italic">Yogi Raman</span></p>
+                                    <p>"The only constant in life is change." <span class="italic">Russell Clark</span></p>
+                                    <p>"If thou wilt make a man happy, add not unto his riches, but take away from his desires." <span class="italic">Epicurus</span></p>
+                                    <p>"Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for." <span class="italic">Epicurus</span></p>
+                                    <p>View every challenge as an opportunity.</p>
+                                    <p>"Nothing is invented, for it's written in nature first." <span class="italic">Antoni Gaudi</span></p>
+                                    <p>"Whreof we cannot speak, thereof we must remain silent." <span class="italic">L. Wittgenstein</span></p>
+                                    <p>Work is the best friend I have.</p>
+                                    <p>Work well done does good to the man who does it. It makes him a better man.</p>
+                                    <p>"We do not rise to the level of our expectations but fall to the level of our training." <span class="italic">Miyamoto Musashi</span></p>
+                                    <p>"And from the best of the strange, perhaps nothing." <span class="italic">Charles Bukowski</span></p>
+                                </article>
+                            </section>
                         </div>
                     </div>
-                <div class="container">
-                    <div class="mySlides fade">
-                        <article>            
-                            <p>Warren Buffett investing framework:</p>
-                                <ul class="list">
-                                    <li>a stock is part of a business, try to understand the business, search for companies with enduring competitive advantages or a wide moat</li>
-                                    <li>how investors should react to stock market fluctuations - use Mr. Market to your own advantage</li>
-                                    <li>the margin of safety - the stock price must scream at you.</li>
-                                </ul>
-                            <p>"Interest rates act like gravity on valuation." <span class="italic">Warren Buffett</span></p>
-                            <p>Short-term challanges are the price investors pay for long-term riches.</p>
-                            <p>In the stock market, the short run couldn't be more different than the long run.</p>
-                            <p>"The best way to make money is to buy outstanding companies at a time when market pessimism is driving them to prices that represent compelling value." <span class="italic">Jeff Auxier</span></p>
-                            <p>There are no secrets to success. It is the result of preparation, hard work and learning from failure.</p>
-                            <p>"Interest rates act like gravity on valuations." <span class="italic">Warren Buffett</span></p>
-                            <p>"My life has been a product of compound interest." <span class="italic">Warren Buffett</span></p>
-                            <p>"Most people trade too much, to their own detriment." <span class="italic">Howard Marks</span></p>
-                        </article>
+                </div>
+                
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <span class="material-symbols-outlined span">expand_more</span>
+                        <span class="material-symbols-outlined span display">expand_less</span>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__content">
+                            <section>
+                                <article>    
+                                    <p>The only way to be happy is to love. Unless you love, your life will flash by.</p>        
+                                    <p>Wealth is inner-peace. Find joy from within ourselves and from our relationships.</p>
+                                    <p>The importance of being happy with simple things.</p>
+                                    <p>Time freedom, location freedom, financial freedom and freedom from other people's expectations.</p>                                                    
+                                    <p>Not all those that wander are lost.</p>
+                                    <p>"Think of yourself as dead. You have lived your life. Now take what's left and live it properly." <span class="italic">Marcus Aurelius</span></p>
+                                    <p>"Everything hangs on one's thinking...A man is as unhappy as he has convinced himself he is." <span class="italic">Seneca</span></p>
+                                    <p>"That man is the richest whose pleasures are the cheapest." <span class="italic">Henry David Thoreau</span></p>
+                                    <p>Omnia mea mecum porto.</p>
+                                    <p>"Privacy is your right to be you." <span class="italic">Tim Cook</span></p>
+                                    <p>Pain is the best teacher, but the worst friend.</p>
+                                    <p>Death is not the greatest loss in life. Loss is when life dies inside you while you are alive</p>
+                                    <p>"This is the precept by which I have lived: prepare for the worst, expect the best and take what comes." <span class="italic">Hanna Arendt</span></p>
+                                    <p>"Seek nothing outside of yourself." <span class="italic">Miyamoto Musashi</span></p>
+                                </article>
+                            </section>
+                        </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="mySlides fade">
-                        <article>
-                            <p>"The wealth, like a tree grows from a tiny seed.</p>
-                            <p>A part of all you earn, it's yours to keep.</p>
-                            <p>Pay yourself first and be ready for opportunity.</p>
-                            <p>The three pillars of wealth: earn, save, invest.</p>
-                            <p>Good luck can be enticed by accepting opportunity and action.</p>
-                            <p>Better a little caution than a great regreat.</p>
-                            <p>We cannot afford to be without adequate protection.</p>
-                            <p>Where the determination is, the way can be found." <span class="italic">Methon, The Gold Lender</span></p>
-                            <p>"And that their sins may grow; let them live in their folly until their time is ripe. Let them not know that I am the master." <span class="italic">H.G. Wells</span></p>
-                            <p>"Things that come with little help from luck are more resistant to randomness." <span class="italic">Nassim Taleb</span></p>
-                            <p>"For the uncertain future is yet to come, with all variety of future." <span class="italic">Solon</span></p>
-                            <p>"You can't buy what is popular and do well." <span class="italic">Warren Buffett</span></p>
-                            <p>"Good investing requires a combination of patience and aggresiveness." <span class="italic">Charlie Munger</span></p>
-                            <p>The hardest task an investor has to exercise is patience. Many of them would have been millionaires.</p>
-                            <p>"You can only fight the way you practice." <span class="italic">Miyamoto Musashi</span></p>
-                        </article>
-                    </div> 
+                
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <span class="material-symbols-outlined span">expand_more</span>
+                        <span class="material-symbols-outlined span display">expand_less</span>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__content">
+                            <section>
+                                <article>
+                                    <p>"One often meets his destiny on the very road he takes to avoid it." <span class="italic">Oogway</span></p>
+                                    <p>"Become so very free that your whole existance is an act of rebelion." <span class="italic">Albert Camus</span></p>
+                                    <p>"You could leave life right now. Let that determine what you do and  say and think." <span class="italic">Marcus Aurelius</span></p>
+                                    <p>"Rule your mind or it will rule you." <span class="italic">Horace</span></p>
+                                    <p>True strenght is when you stand up for yourself because nobody is there to do it for you.</p>
+                                    <p>"The world has enough for everyone's needs, but not for everyone's greed." <span class="italic">Mahatma Gandi</span></p>
+                                    <p>If you wish nothing, you have everything.</p>
+                                    <p>You develop courage by surviving difficult times and challenging adversity." <span class="italic">Epicurus</span></p>
+                                    <p>"When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love." <span class="italic">Marcus Aurelius</span></p>
+                                    <p>"Success, like hapiness, cannot be pursued. It must ensue." <span class="italic">Victor Frankl</span></p>
+                                    <p>"Forgiveness is the only way to reverse the irreversible flow of history." <span class="italic">Hanna Arendt</span></p>
+                                    <p>"A bowl is most useful when it is empty." <span class="italic">Lao Tzu</span></p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
-        </div>
         </main>
 
-        <footer class="footWrap">
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+        <footer>
         </footer>
 
-    </div>
-
-    <script src="script.js"></script>
-
+        <script src="script.js"></script>
+        
     </body>
 </html>
