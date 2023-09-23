@@ -85,7 +85,7 @@ ul > li > a {
   font-size: 1.1rem;
   line-height: 1.8rem;
   /* color: black; */
-  color: SlateBlue;
+  color: darkslateblue;
   font-weight: 500;
 }
 
@@ -151,8 +151,8 @@ main {
 .accordion__body {
   /* border-radius: 5px; */
   height: 0;
-  /* overflow: hidden; */
-  overflow: scroll;
+  overflow: hidden;
+  /* overflow: scroll; */
   transition: height 0.5s ease-in-out;
 }
 
@@ -221,7 +221,7 @@ article > p {
 
   li:hover {
     /* background-color: #eee; */
-    color: SlateBlue;
+    color: darkslateblue;
 }
 
   nav ul li a {
@@ -232,7 +232,7 @@ article > p {
 
   .active {
     /* background-color: #eee; */
-    color: SlateBlue;
+    color: darkslateblue;
   }
 
   main {
@@ -323,7 +323,7 @@ article > p {
 
   li:hover {
       background-color: #ddd;
-      color: SlateBlue;
+      color: darkslateblue;
   }
 
   nav ul li a {
@@ -334,7 +334,7 @@ article > p {
 
   .active {
     background-color: #eee;
-    color: SlateBlue;
+    color: darkslateblue;
   }
 
   main {
