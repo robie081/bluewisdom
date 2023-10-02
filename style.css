@@ -1,3 +1,133 @@
+/* Simple dark */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  border: 1px solid silver;
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0.5rem;
+  border-radius: 6px;
+}
+
+/* Reset button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+button {
+  color: #9ca3af;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+/* Style the menu button container */
+.menu-button {
+  border: 2px solid #1f2937;
+  transition: transform 0.3s ease;
+}
+
+.menu-button:focus {
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.menu-icon {
+  /* border: 2px solid white; */
+  padding: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Style the menu icon SVG */
+.menu-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #9ca3af;
+  transition: fill 0.3s ease; 
+}
+
+/* Change the icon color and change bg on hover */
+.menu-icon:hover {
+  background-color: #374151;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+/* .menu-icon:hover svg {
+  fill: #fff; 
+} */
+
+.menu-icon:hover path {
+  stroke: #fff;
+}
+
+.cross {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-menu {
+  /* border: 1px solid silver; */
+  margin-top: 1rem;
+}
+
+ul li {
+  /* border: 1px solid silver; */
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  margin-top: 4px;
+  border-radius: 6px;
+  /* background-color: #111827; */
+  color: rgb(209 213 219);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  font-weight: 500;
+}
+
+ul li:first-child {
+  color: white;
+  background-color: #111827;
+}
+
+/* .active {
+  color: white;
+} */
+
+/* ul li:hover {
+  color: white;
+  background-color: #4a5568;
+} */
+
+ul li:not(:first-child):hover {
+  color: white;
+  background-color: #4a5568;
+}
+
+
+
+
+
+
 
 *, 
 *::after,

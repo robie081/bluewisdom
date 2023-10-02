@@ -1,4 +1,27 @@
 
+// Simple Dark
+
+const hamburger = document.querySelector('.hamburger');
+const cross = document.querySelector('.cross');
+
+document.querySelector('.menu-icon').addEventListener('click', () => {
+    console.log('clicheck');
+    if (hamburger.style.display === 'none') {
+        hamburger.style.display = 'block';
+        cross.style.display = 'none';
+    } else {
+        hamburger.style.display = 'none';
+        cross.style.display = 'block';
+    }
+});
+
+document.querySelector('.menu-icon').addEventListener('click', () => {
+    document.querySelector('.mobile-menu').classList.toggle('hidden');
+});
+
+
+
+
 // JQuery Toggle
 
 // $(document).ready(function(){
@@ -182,4 +205,11 @@ items.forEach((item, index) => {
   });
 });
 
+// How do you set the height of an accordion dynamically?
 
+// const accordionContent = accordion.querySelector('.accordion__content');
+
+// window.addEventListener('resize', () => {
+//   // console.log(accordionContent);
+//   body.style.height = 10 + 'px';
+// })
