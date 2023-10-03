@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> -->
         
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
         
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
@@ -18,7 +18,8 @@
         <!-- <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> -->
 
-        <!-- <link rel="stylesheet" href="reset.css"> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam&display=swap">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         
         <!-- <script src="https://kit.fontawesome.com/789d035975.js" crossorigin="anonymous"></script> -->
@@ -28,46 +29,39 @@
     <body>
 
         <!-- Simple Dark -->
-        <nav>
-            <button type="button" class="menu-button">
-                <div class="menu-icon">
-                    <svg class="hamburger block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <svg class="cross h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+        <header>
+            <nav>
+                <div class="navigation">
+                    <div class="logo">
+                        <a class="kalam" href="index.html">tw</a>
+                    </div>
+                    <div class="menu-button" tabindex="1">
+                        <div class="menu-icon">
+                              <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30">
+                                <path d="M4 8h22M4 15h22M4 22h22" stroke="#cccccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg> 
+                              <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30">
+                                <g transform="scale(0.8) translate(4, 4)">
+                                    <path d="M4 4l22 22M4 26l22-22" stroke="#cccccc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                              </svg>
+                        </div>
+                    </div> 
                 </div>
-            </button>
-            <div class="mobile-menu hidden">
-              <ul>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Philosophy</a></li>
-                <li><a href="#">Wellness</a></li>
-                <li><a href="#">Investing</a></li>
-                <li><a href="#">Books</a></li>
-              </ul>
-            </div>
-        </nav>
+                
+                <div class="mobile-menu hidden">
+                    <ul>
+                      <li class="active"><a href="index.html">About</a></li>
+                      <li><a href="philosophy.html">Philosophy</a></li>
+                      <li><a href="wellness.html">Wellness</a></li>
+                      <li><a href="investing.html">Investing</a></li>
+                      <li><a href="books.html">Books</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-
-
-
-
-        <!-- <header></header>  -->
-        <!-- <nav class="navigator">
-            <div id="bttn" class="nav-button"><span id="toggleId" class="material-symbols-outlined">menu</span></div>
-
-            <ul id="toggler" class="nav">
-                <li class="active"><a href="index.html">About</a></li>
-                <li><a href="philosophy.html">Philosophy</a></li>
-                <li><a href="wellness.html">Wellness</a></li>
-                <li><a href="investing.html">Investing</a></li>
-                <li><a href="books.html">Books</a></li>
-            </ul>
-        </nav> -->
-
-        <!-- <main>
+        <main>
             <section>
                 <article>
                     <p class="one"><span class="indent">"Let no one be slow to seek wisdom when he is young nor weary in the search thereof when he is grown old. For no age is too early or too late for the health of the soul."</span></p>
@@ -76,7 +70,7 @@
             </section>
         </main>
 
-        <footer></footer> -->
+        <!-- <footer></footer> -->
 
         <script src="script.js"></script>
     </body>

@@ -43,9 +43,9 @@ document.querySelector('.menu-icon').addEventListener('click', () => {
   //   document.getElementById('toggler').classList.toggle('open');
   // }
 
-document.getElementById('bttn').addEventListener('click', () => {
-  document.getElementById('toggler').classList.toggle('open');  
-});
+// document.getElementById('bttn').addEventListener('click', () => {
+//   document.getElementById('toggler').classList.toggle('open');  
+// });
 
 // Font Awesome
 
@@ -68,14 +68,14 @@ document.getElementById('bttn').addEventListener('click', () => {
 // Toggle
 
 // document.getElementById('bttn').addEventListener('click', () => {
-document.querySelector('.nav-button').addEventListener('click', () => {
-  const toggleElement = document.getElementById('toggleId');
-  if(toggleElement.innerHTML === "menu") {
-    toggleElement.innerHTML = "close";
-  } else {
-    toggleElement.innerHTML = "menu";
-  }
-});
+// document.querySelector('.nav-button').addEventListener('click', () => {
+//   const toggleElement = document.getElementById('toggleId');
+//   if(toggleElement.innerHTML === "menu") {
+//     toggleElement.innerHTML = "close";
+//   } else {
+//     toggleElement.innerHTML = "menu";
+//   }
+// });
 
 
 // Accordion
