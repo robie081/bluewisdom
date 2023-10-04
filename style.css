@@ -93,6 +93,7 @@ body {
 } */
 
 
+
 /* Simple dark */
 
 * {
@@ -295,8 +296,10 @@ ul li a:hover {
   background-color: #e5e7eb;
 } */
 
-.activation {
-  background-color: #e5e7eb;
+@media (hover: hover) {
+  .activation, .accordion__title:hover {
+    background-color: #e5e7eb;
+  }
 }
 
 .accordion__title > span {
