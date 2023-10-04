@@ -296,6 +296,10 @@ ul li a:hover {
   background-color: #e5e7eb;
 }
 
+.accordion__title:focus {
+  outline: none;
+}
+
 .accordion__title > span {
   float: right;
 }
