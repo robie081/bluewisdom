@@ -302,6 +302,10 @@ ul li a:hover {
   }
 }
 
+.activation {
+  background-color: #e5e7eb;
+}
+
 .accordion__title > span {
   float: right;
 }
