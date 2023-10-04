@@ -302,7 +302,7 @@ ul li a:hover {
   }
 }
 
-.activation {
+.accordion__title:hover {
   background-color: #e5e7eb;
 }
 
