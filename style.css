@@ -108,7 +108,8 @@ html {
 }
 
 nav {
-  background-color: #1f2937;
+  /* background-color: #1f2937; */
+  background-color: #f9fafb;
   display: flex;
   flex-direction: column;
   padding: 0.8rem 0.5rem;
@@ -124,13 +125,14 @@ nav {
 }
 
 .menu-button {
-  border: 2px solid #1f2937;
+  /* border: 2px solid #1f2937; */
+  border: 2px solid #f9fafb;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .menu-button:focus {
-  border: 2px solid white;
+  border: 2px solid #6b7280;
   border-radius: 6px;
 }
 
@@ -145,18 +147,19 @@ nav {
   width: 26px;
   height: 26px;
   /* stroke: #9ca3af; */
-  stroke: #cccccc;
+  stroke: #6b7280;
   transition: fill 0.3s ease; 
 }
 
 .menu-icon:hover {
-  background-color: #374151;
+  /* background-color: #374151; */
+  background-color: #edf2f7;
   border-radius: 6px;
   padding: 6px;
 }
 
 .menu-icon:hover path {
-  stroke: #fff;
+  stroke: black;
 }
 
 .cross {
@@ -178,7 +181,8 @@ ul {
 ul li {
   cursor: pointer;
   list-style-type: none;
-  border-radius: 6px;
+  border-radius: 3px;
+  margin-top: 3px;
 }
 
 ul li a {
@@ -186,26 +190,26 @@ ul li a {
   padding: 0.6rem;
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.5rem; 
   font-weight: 500;
-  color: #cccccc;
+  color: #6b7280;
 }
 
 .active {
-  background-color: #111827;
+  background-color: #e0e7ff;
 }
 
 .active a {
-  color: white;
+  color: #4338ca;
 }
 
 ul li:hover {
-  background-color: #4a5568;
+  background-color: #f3f4f6;
 }
 
 ul li a:hover {
-  color: white;
+  color: #374151;
 }
 
 .logo {
@@ -215,7 +219,7 @@ ul li a:hover {
 
 .logo a {
   text-decoration: none;
-  color: #cccccc;
+  color: #6b7280;
 }
 
 .kalam {
@@ -225,7 +229,7 @@ ul li a:hover {
 }
 
 .logo a:hover {
-  color: white;
+  color: #1f2937;
 }
 
 
@@ -254,8 +258,8 @@ ul li a:hover {
 /* Accordion */
 
 .accordion__title {
-  /* background-color: #eee; */
-  background-color: #1f2937;
+  background-color: #f9fafb;
+  /* background-color: #1f2937; */
   color: black;
   cursor: pointer;
   margin-top: 1rem;
@@ -289,7 +293,7 @@ ul li a:hover {
 
 .activation, .accordion__title:hover {
   /* background-color: #ddd; */
-  background-color: #4a5568;
+  background-color: #e5e7eb;
 }
 
 .accordion__title > span {
@@ -310,11 +314,12 @@ ul li a:hover {
 }
 
 .span {
-  color: #cccccc;
+  color: #6b7280;
 }
 
-.accordion__title .span:hover {
-  color: white;
+.accordion__title:hover > *
+{
+  color: #1f2937;
 }
 
 /* Text */
