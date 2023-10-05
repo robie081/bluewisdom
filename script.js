@@ -13,8 +13,8 @@ menuIcon.addEventListener('click', () => {
     if (hamburger.style.display === 'none') {
         hamburger.style.display = 'block';
         cross.style.display = 'none';
-        menuButton.blur();
-        menuIcon.blur();
+        // menuButton.blur();
+        // menuIcon.blur();
     } else {
         hamburger.style.display = 'none';
         cross.style.display = 'block';
