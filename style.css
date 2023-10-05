@@ -242,13 +242,17 @@ ul li a:hover {
   border: 2px solid red;
 } */
 
+.up {
+  padding-top: 5rem;
+}
+
 .indent {
   margin-left: 1.5rem;
 }
 
 .one {
   margin: 2rem;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .two {

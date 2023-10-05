@@ -1,11 +1,12 @@
 
-// Simple Dark
+// Simple Light
+// Menu
 
 const hamburger = document.querySelector('.hamburger');
 const cross = document.querySelector('.cross');
 
 document.querySelector('.menu-icon').addEventListener('click', () => {
-    console.log('clicheck');
+    console.log('click check');
     if (hamburger.style.display === 'none') {
         hamburger.style.display = 'block';
         cross.style.display = 'none';
@@ -19,7 +20,64 @@ document.querySelector('.menu-icon').addEventListener('click', () => {
     document.querySelector('.mobile-menu').classList.toggle('hidden');
 });
 
+document.querySelector('.menu-icon').addEventListener('click', () => {
+  document.querySelector('.one').classList.toggle('up');
+})
 
+// Accordion
+// After Integration
+
+const accordion = document.querySelector('.accordion');
+const items = accordion.querySelectorAll('.accordion__item');
+
+const toggle_item = (item) => {
+  const body = item.querySelector('.accordion__body');
+
+  // activation
+  const title = item.querySelector('.accordion__title');
+  // // console.log(title);
+  title.classList.toggle('activation');
+  // console.log(item.classList.contains('is-open'));
+  if (item.classList.contains('is-open')) {
+      body.removeAttribute('style');
+      item.classList.remove('is-open');
+  } else {
+      body.style.height = body.scrollHeight + 'px';
+      item.classList.add('is-open');
+  }
+}
+
+const toggle_arrow = (item) => {
+  const title = item.querySelector('.accordion__title');
+  // console.log(title);
+  // console.log(title.children[0]);
+  // console.log(title.children[1]);
+  let spanmore = title.children[0];
+  let spanless = title.children[1];
+
+  if (spanless.classList.contains('display')) {
+      spanless.classList.remove('display');
+      spanmore.classList.add('display');
+  } else {
+      spanless.classList.add('display');
+      spanmore.classList.remove('display');
+  }
+}
+
+items.forEach((item, index) => {
+  // console.log(item);
+  const title = item.querySelector('.accordion__title');
+  // console.log(title);
+
+  if (index === 0) {
+      toggle_item(item);
+  }
+
+  title.addEventListener('click', (e) => {
+      toggle_item(item);
+      toggle_arrow(item);
+  });
+});
 
 
 // JQuery Toggle
@@ -150,60 +208,6 @@ document.querySelector('.menu-icon').addEventListener('click', () => {
 //     }
 //   });
 // }
-
-// After Integration
-
-const accordion = document.querySelector('.accordion');
-const items = accordion.querySelectorAll('.accordion__item');
-
-const toggle_item = (item) => {
-  const body = item.querySelector('.accordion__body');
-
-  // activation
-  const title = item.querySelector('.accordion__title');
-  // // console.log(title);
-  title.classList.toggle('activation');
-  // console.log(item.classList.contains('is-open'));
-  if (item.classList.contains('is-open')) {
-      body.removeAttribute('style');
-      item.classList.remove('is-open');
-  } else {
-      body.style.height = body.scrollHeight + 'px';
-      item.classList.add('is-open');
-  }
-}
-
-const toggle_arrow = (item) => {
-  const title = item.querySelector('.accordion__title');
-  // console.log(title);
-  // console.log(title.children[0]);
-  // console.log(title.children[1]);
-  let spanmore = title.children[0];
-  let spanless = title.children[1];
-
-  if (spanless.classList.contains('display')) {
-      spanless.classList.remove('display');
-      spanmore.classList.add('display');
-  } else {
-      spanless.classList.add('display');
-      spanmore.classList.remove('display');
-  }
-}
-
-items.forEach((item, index) => {
-  // console.log(item);
-  const title = item.querySelector('.accordion__title');
-  // console.log(title);
-
-  if (index === 0) {
-      toggle_item(item);
-  }
-
-  title.addEventListener('click', (e) => {
-      toggle_item(item);
-      toggle_arrow(item);
-  });
-});
 
 // How do you set the height of an accordion dynamically?
 
