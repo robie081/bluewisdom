@@ -298,12 +298,12 @@ ul li a:hover {
 
 @media (hover: hover) {
   .accordion__title:hover {
-    background-color: red;
+    background-color: #e5e7eb;
   }
 }
 
 .activation {
-  background-color: blue;
+  background-color: #e5e7eb;
 }
 
 .accordion__title > span {
