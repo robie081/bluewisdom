@@ -288,7 +288,8 @@ ul li a:hover {
 
 .accordion__body {
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: scroll;
   transition: height 0.5s ease-in-out;
 }
 
