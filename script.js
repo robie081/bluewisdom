@@ -4,12 +4,14 @@
 
 const hamburger = document.querySelector('.hamburger');
 const cross = document.querySelector('.cross');
+const menuButton = document.querySelector('.menu-button');
 
 document.querySelector('.menu-icon').addEventListener('click', () => {
     console.log('click check');
     if (hamburger.style.display === 'none') {
         hamburger.style.display = 'block';
         cross.style.display = 'none';
+        menuButton.blur();
     } else {
         hamburger.style.display = 'none';
         cross.style.display = 'block';
@@ -19,6 +21,8 @@ document.querySelector('.menu-icon').addEventListener('click', () => {
 document.querySelector('.menu-icon').addEventListener('click', () => {
     document.querySelector('.mobile-menu').classList.toggle('hidden');
 });
+
+// Toggle class up
 
 document.querySelector('.menu-icon').addEventListener('click', () => {
   document.querySelector('.one').classList.toggle('up');
