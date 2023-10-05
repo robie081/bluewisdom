@@ -292,19 +292,19 @@ ul li a:hover {
   transition: height 0.5s ease-in-out;
 }
 
-.activation, .accordion__title:hover {
+/* .activation, .accordion__title:hover {
   background-color: #e5e7eb;
+} */
+
+@media (hover: hover) {
+  .accordion__title:hover {
+    background-color: red;
+  }
 }
 
-/* @media (hover: hover) {
-  .activation, .accordion__title:hover {
-    background-color: #e5e7eb;
-  }
-} */
-
-/* .accordion__title:hover {
-  background-color: #e5e7eb;
-} */
+.activation {
+  background-color: blue;
+}
 
 .accordion__title > span {
   float: right;
