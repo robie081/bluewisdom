@@ -346,6 +346,40 @@ article > p {
   font-weight: 400;
 }
 
+@media only screen and (orientation: landscape) {
+  .index {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .up {
+    padding-top: 0;
+  }
+
+  /* .indent {
+    margin-left: 1.5rem;
+  } */
+
+  .one {
+    /* border: 2px solid red; */
+    margin: 2rem;
+    /* padding-top: 5rem; */
+  }
+
+  /* .two {
+    margin: 2rem;
+    text-align: end;
+  } */
+}
+
+@media only screen and (min-width: 65em) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
 /* @media only screen and (orientation: landscape) {
 
   .nav-button {
