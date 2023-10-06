@@ -133,7 +133,8 @@ nav {
 }
 
 .menu-button:focus {
-  border: 2px solid #6b7280;
+  /* border: 2px solid #6b7280; */
+  border: 2px solid #6366f1;
   border-radius: 6px;
 }
 
