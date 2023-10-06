@@ -132,10 +132,18 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.menu-button:focus {
+/* .menu-button:focus { */
   /* border: 2px solid #6b7280; */
-  border: 2px solid #6366f1;
+  /* border: 2px solid #6366f1;
   border-radius: 6px;
+} */
+
+@media (hover: hover) {
+  .menu-button:focus {
+    /* border: 2px solid #6b7280; */
+    border: 2px solid #6366f1;
+    border-radius: 6px;
+  }
 }
 
 .menu-icon {
