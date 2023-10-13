@@ -1,101 +1,4 @@
 
-
-
-/* *, 
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
-/* html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* Grid Mobile */
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Open-Sans', sans-serif; */
-  /* font-size: 100%; */
-  /* font-weight: 400; */
-} 
-
-/* header {
-  padding: 0.5rem 0;
-} */
-
-/* Navigation */
-
-/* nav {
-  background-color: white;
-  border-radius: 3px;
-} */
-
-/* .nav {
-  display: none;
-} */
-
-/* .nav {
-  text-align: center;
-  padding: 0.6em 2em 1em 2em;
-  background-color: white;
-} */
-
-/* .open {
-  display: block;
-} */
-
-/* .navigator {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .nav-button {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-} */
-
-/* ul > li > a { */
-  /* border: 2px solid plum; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Open-Sans', sans-serif; */
-  /* font-family: 'Lato', sans-serif;
-  text-decoration: none;
-  font-size: 1.1rem;
-  line-height: 1.8rem;
-  color: darkslateblue;
-  font-weight: 500;
-} */
-
-/* .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48;
-  font-size: 1.8em;
-} */
-
-
-
-/* Simple dark */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -108,6 +11,21 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Grid Mobile */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Open-Sans', sans-serif; */
+} 
+
+/* Simple dark */
+
 nav {
   /* background-color: #1f2937; */
   background-color: #f9fafb;
@@ -115,8 +33,8 @@ nav {
   flex-direction: column;
   padding: 0.8rem 0.5rem;
   border-radius: 6px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .navigation {
@@ -237,12 +155,21 @@ ul li a:hover {
   color: #6b7280;
 }
 
-.tw {
+.tw, .timeless {
   /* font-family: 'Kalam'; */
   font-family: 'Dancing Script';
+  font-weight: 600;
+}
+
+.tw {
   font-size: 2.5rem;
   letter-spacing: 4px;
-  font-weight: 600;
+}
+
+.timeless {
+  display: none;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
 }
 
 .logo a:hover {
@@ -362,6 +289,20 @@ article > p {
   font-weight: 400;
 }
 
+/* Books */
+
+table {
+  border-collapse: collapse;  
+  margin-left: 0px;
+}
+
+td {
+  font-size: 1rem;
+  padding: 5px 18px 5px 18px; 
+  border-bottom: 1px solid #ccc; 
+  line-height: 1.2em;
+}
+
 @media only screen and (orientation: landscape) {
   .index {
     /* border: 2px solid red; */
@@ -389,66 +330,13 @@ article > p {
   } */
 }
 
-@media only screen and (min-width: 65em) {
-  body {
+@media only screen and (min-width: 65rem) {
+  /* body {
+    border: 3px solid black;
     background-color: lightblue;
-  }
-}
+  } */
 
-
-/* @media only screen and (orientation: landscape) {
-
-  .nav-button {
-    display: none;
-  }  
-
-  .navigator {
-    display: block;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav {
-    text-align: center;
-    margin: 1em 0 -0.5em 0;
-  }
-
-  li:hover {
-    color: darkslateblue;
-}
-
-  nav ul li a {
-      text-decoration: none;
-      padding: 1em;
-      color: inherit;
-  } 
-
-  .active {
-    color: darkslateblue;
-  }
-
-  main {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .one {
-    margin: 1rem;
-    padding-top: 3rem;
-  }
-  
-  .two {
-    margin: 1rem;
-    padding-top: 1rem;
-    text-align: end;
-  }
-
-} */
-
-/* @media only screen and (min-width: 65em) {
+  /* Grid Desktop */
 
   body {
     display: grid;
@@ -456,75 +344,79 @@ article > p {
   }
 
   header, nav, main, footer {
-      grid-column: 2 / 3;
+    grid-column: 2 / 3;
   }
 
-  .nav-button {
+  .tw {
     display: none;
-  }  
+  }
 
-  .navigator {
+  .timeless {
+    /* border: 2px solid orange; */
     display: block;
   }
 
-  .nav {
+  .one {
+    margin-top: 12rem;
+    /* padding-top: 5rem; */
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-menu {
+    /* border: 2px solid black; */
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 3.6rem 1rem 1rem 1rem;
+  }
+
+  ul {
+    /* border: 1px solid plum; */
     display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 
-  .nav {
-    text-align: center;
-    margin: 3em 0 3em 0;
+  ul li {
+    /* border: 3px solid lightblue; */
+    margin: 0 0.5rem 0 0;
+    /* padding: 0 0.5rem; */
   }
 
-  nav ul {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
+  ul li a {
+    /* border: 1px solid orange; */
+    color: #374151;
   }
-
-  nav ul li {
-      float: left;
-      border-right: 1px solid #aaa;
-      box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
-      color: #333;
-      font-size: 1em;
-      font-weight: 400;
-      transition: all 0.5s linear;
-      padding: 0.5em 1em;
-      background-color: #eee;
-  }
-
-  li:first-child {
-      border-radius: 5px 0 0 5px;
-  }
-
-  li:last-child {
-      border-right: none;
-      border-radius: 0 5px 5px 0;
-  }
-
-  li:hover {
-      background-color: #ddd;
-      color: darkslateblue;
-  }
-
-  nav ul li a {
-      text-decoration: none;
-      color: inherit;
-  } 
 
   .active {
-    background-color: #eee;
-    color: darkslateblue;
+    background-color: #f9fafb;
   }
 
-  main {
-    max-width: 60em;
-    margin: 0 auto;
+  .active a {
+    color: #4338ca;
   }
 
-} */
+  .active a:hover {
+    color: #4338ca;
+    background-color: #f9fafb;
+  }
 
+  ul li:hover {
+    background-color: #f9fafb;
+  }
+
+  ul li a:hover {
+    color: black;
+  }
+}
 
