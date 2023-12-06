@@ -33,8 +33,6 @@ nav {
   flex-direction: column;
   padding: 0.8rem 0.5rem;
   border-radius: 6px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .navigation {

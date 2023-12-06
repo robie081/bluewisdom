@@ -9,7 +9,7 @@ const cross = document.querySelector('.cross');
 
 
 menuIcon.addEventListener('click', () => {
-    console.log('click check');
+    // console.log('click check');
     if (hamburger.style.display === 'none') {
         hamburger.style.display = 'block';
         cross.style.display = 'none';
